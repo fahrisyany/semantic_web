@@ -57,9 +57,12 @@ function openItem() {
   openEquip.play();
 }
 
+function openMenu() {
+  startBattle.play();
+}
+
 //Press to Commence Battle//
 function engage() {
-  startBattle.play();
 
   villian_start.play();
 
