@@ -33,6 +33,8 @@ var villian_attack2 = new Audio("./voice/villian/attack2.wav");
 // var hero_damage = new Audio("./voice/hero/damage.wav");
 
 var battleOST = new Audio("./voice/bgm/FFXIV OST - Lakshmis Theme.mp3");
+var startBattle = new Audio("./voice/se/battle_menu.wav");
+var openEquip = new Audio("./voice/se/equipment_menu.wav");
 
 //Player1 Skill
 function skill_key_o() {
@@ -51,13 +53,18 @@ function skill_key_l() {
   return (health2.value -= 110), (mana1.value -= 120);
 }
 
+function openItem() {
+  openEquip.play();
+}
 
 //Press to Commence Battle//
 function engage() {
-    villian_start.play();
+  startBattle.play();
+
+  villian_start.play();
 
   battleOST.play();
-//   hero_start.play();
+  //   hero_start.play();
 
   document.onkeydown = function(e) {
     if (e.ctrlKey && e.which == 79) {
