@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+
+
+        <div class="mainSpace" id="player1" style="width:350px">
+
+            <img class="card-img-top" id='animationMonster1' src="https://i.imgur.com/7HkJpvF.png" alt="https://i.imgur.com/NJGt4hM.png?1"
+                style="width:100%">
+            <div class="card-body">
+                <br> Name:
+                <input id="player1_name" type="text" value="Siegfried" readonly>
+                <br> Health:
+                <input id="player1_health" type="text" value="35000" readonly maxlength="10" size="10">
+                <br>
+                <progress id="health1" value="35000" max="35000"></progress>
+                <br> Mana:
+                <input id="player1_mana" type="text" value="2000" readonly maxlength="10" size="10">
+                <br>
+                <progress id="mana1" value="2000" max="2000"></progress>
+                <br> Attack:
+                <input id="player1_attack" type="text" value="680" readonly maxlength="4" size="4">
+                <br> Defense:
+                <input id="player1_defense" type="text" value="700" readonly maxlength="4" size="4">
+                <br> Accuracy:
+                <input id="layer1_accuracy" type="text" value="530" readonly maxlength="4" size="4">
+                <br>Stance:
+                <input id="player1_stance" type="text" value="Dark side" readonly>
+                <br>
+                <p></p>
+
+                <button type="button" class="btn btn-danger" id="attack" value="sound" onclick="engage()">Battle</button>
+                <button type="button" class="btn btn-success">Items</button>
+                <button type="button" class="btn btn-dark">Options</button>
+
+                <p></p>
+                <button id="skill1">
+                    <img src="https://i.imgur.com/de5rCQk.png" alt="https://i.imgur.com/CeP63oj.png" style="width:50%">
+                </button>
+                <button id="skill2">
+                    <img src="https://i.imgur.com/pZ2S5kZ.png" alt="https://i.imgur.com/CeP63oj.png" style="width:50%">
+                </button>
+                <button id="skill3">
+                    <img src="https://i.imgur.com/gjKTmRO.png" alt="https://i.imgur.com/CeP63oj.png" style="width:50%">
+                </button>
+                <br>
+                <p></p>
+                <button id="skill4">
+                    <img src="https://i.imgur.com/lYMJQ9f.png" alt="https://i.imgur.com/CeP63oj.png" style="width:50%">
+                </button>
+                <button id="skill5">
+                    <img src="https://i.imgur.com/cJcNqDq.png" alt="https://i.imgur.com/CeP63oj.png" style="width:50%">
+                </button>
+                <button id="skill6">
+                    <img src="https://i.imgur.com/ceqZusC.png" alt="https://i.imgur.com/CeP63oj.png" style="width:50%">
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="center">
+        </div>
+
+        <div class="mainSpace" id="player2" style="width:350px;">
+
+            <img class="card-img-bottom" id='animationMonster2' src="https://i.imgur.com/erpdOBX.png" alt="https://i.imgur.com/a0av5YC.png"
+                style="width:100%">
+            <div class="card-body">
+                <br> Name:
+                <input id="monster_name" type="text" value="King Xerxes" readonly>
+                <br> Health:
+                <input id="monster_health" type="text" value="86000" readonly maxlength="10" size="10">
+                <br>
+                <progress id="health2" value="86000" max="86000"></progress>
+                <br> Attack:
+                <input id="monster_attack" type="text" value="700" readonly maxlength="4" size="4">
+                <br> Defense:
+                <input id="monster_defense" type="text" value="570" readonly maxlength="4" size="4">
+                <br> Accuracy:
+                <input id="monster_accuracy" type="text" value="1000" readonly maxlength="4" size="4">
+
+                <br>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
